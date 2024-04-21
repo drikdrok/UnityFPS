@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\assets\\scripts\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bulletscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\drikd\\documents\\github\\unityfps\\my project\\assets\\scripts\\bullethole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullethole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\drikd\\documents\\github\\unityfps\\my project\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\assets\\assets\\modularfirstpersoncontroller\\firstpersoncontroller\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\assets\\modularfirstpersoncontroller\\firstpersoncontroller\\firstpersoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\assets\\scripts\\gunscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gunscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\assets\\scripts\\guiscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\guiscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\assets\\scripts\\ammopickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ammopickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BulletHole.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\BulletHole.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BulletHole.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\BulletHole.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BulletHole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T00:13:44.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AmmoPickup.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\AmmoPickup.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AmmoPickup.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\AmmoPickup.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AmmoPickup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T22:54:03.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GUIScript.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\GUIScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GUIScript.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\GUIScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GUIScript.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T22:47:18.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GunScript.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\GunScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GunScript.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\GunScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GunScript.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwCUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T22:45:00.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Health.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Health.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T22:13:38.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyController.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAowFYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T21:48:29.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BulletScript.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\BulletScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BulletScript.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\BulletScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BulletScript.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T21:02:20.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADEAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T20:57:02.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FirstPersonController.cs",
+              "DocumentMoniker": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Assets\\ModularFirstPersonController\\FirstPersonController\\FirstPersonController.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets\\ModularFirstPersonController\\FirstPersonController\\FirstPersonController.cs",
+              "ToolTip": "C:\\Users\\drikd\\Documents\\GitHub\\UnityFPS\\My project\\Assets\\Assets\\ModularFirstPersonController\\FirstPersonController\\FirstPersonController.cs",
+              "RelativeToolTip": "Assets\\Assets\\ModularFirstPersonController\\FirstPersonController\\FirstPersonController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T20:41:31.056Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
