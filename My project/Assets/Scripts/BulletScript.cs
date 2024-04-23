@@ -6,7 +6,8 @@ public class BulletScript : MonoBehaviour
 {
     public float speed = 25f;
     public float lifeTime = 5;
-    public int damage = 30;
+    public int minDmg = 20;
+    public int maxDmg = 35;
 
     public GameObject bulletHolePrefab;
 
@@ -28,11 +29,14 @@ public class BulletScript : MonoBehaviour
     }
 
    
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.GetComponent<EnemyController>().Damage(damage);
+            other.gameObject.GetComponent<EnemyController>().Damage(Random.Range(minDmg, maxDmg));
+        }else if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerController>().Damage(Random.Range(minDmg, maxDmg));
         }
         if (other.gameObject.CompareTag("Ground"))
         {

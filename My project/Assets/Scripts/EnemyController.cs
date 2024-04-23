@@ -11,10 +11,17 @@ public class EnemyController : MonoBehaviour
     public float maxPatrolTime = 10;
     public float patrolRadius = 20;
 
+    public GameObject spitPrefab;
+    public Transform spitSpawnPoint;
+
     private NavMeshAgent agent;
     private Transform Target;
     private Animator animator;
     private Health health;
+
+    private Transform target = null;
+
+    private Coroutine attack;
 
     private enum State
     {
@@ -32,18 +39,16 @@ public class EnemyController : MonoBehaviour
         state = State.PATROL;
 
         StartCoroutine(Patrol());
+        attack = StartCoroutine(checkAgro());
     }
 
     void Update()
     {
-        switch (state)
+
+        if (state == State.AGRO && target != null)
         {
-            case State.PATROL:
-
-                break;
-
+            transform.LookAt(target.position);
         }
-
 
         if (agent.velocity.magnitude > 0)
         {
@@ -64,14 +69,15 @@ public class EnemyController : MonoBehaviour
             offset += transform.position;
             agent.isStopped = false;
             agent.SetDestination(offset);
-
-            yield return new WaitForSeconds(Random.Range(minPatrolTime, maxPatrolTime));
-            StartCoroutine(Patrol());
         }
+
+        yield return new WaitForSeconds(Random.Range(minPatrolTime, maxPatrolTime));
+        StartCoroutine(Patrol());
     }
 
     public void Die()
     {
+        health.Kill();
         Destroy(gameObject);
     }
 
@@ -82,6 +88,7 @@ public class EnemyController : MonoBehaviour
             if (health.health <= 0) // Die
             {
                 animator.SetTrigger("Die");
+                StopAllCoroutines();
                 agent.isStopped = true;
                 agent.velocity = Vector3.zero;
                 health.dead = true;
@@ -91,5 +98,73 @@ public class EnemyController : MonoBehaviour
                 animator.SetTrigger("Take Damage");
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            target = other.transform;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            target = null;
+            state = State.PATROL;
+            Debug.Log("Patrolling...");
+        }
+    }
+
+
+
+    private IEnumerator checkAgro()
+    {
+        if (target != null)
+        {
+            RaycastHit hit;
+            if (Physics.Linecast(transform.position, target.position, out hit))
+            {
+                if (hit.transform.CompareTag("Player") && state == State.PATROL){
+                    Debug.Log("Agroed");
+                    state = State.AGRO;
+                    agent.isStopped = true;
+                    agent.velocity = Vector3.zero;
+                    agent.SetDestination(transform.position);
+                    StopCoroutine(attack);
+                    attack = StartCoroutine(Attack());
+                }
+            }
+            else
+            {
+                if (state == State.AGRO)
+                {
+                    Debug.Log("Patrolling...");
+                }
+                state = State.PATROL;
+            }
+        }
+
+        yield return new WaitForSeconds(0.1f);
+        StartCoroutine(checkAgro());
+    }
+
+    private IEnumerator Attack()
+    {
+        animator.SetTrigger("Spit Attack");
+
+        yield return new WaitForSeconds(2.5f);
+
+        if (state == State.AGRO)
+        {
+            StartCoroutine(Attack());
+        }
+    }
+
+    public void Spit()
+    {
+        Instantiate(spitPrefab, spitSpawnPoint.position, Quaternion.identity).transform.LookAt(target);
     }
 }

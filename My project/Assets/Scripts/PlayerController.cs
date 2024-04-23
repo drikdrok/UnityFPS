@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,16 +14,24 @@ public class PlayerController : MonoBehaviour
     public int pickupDistance = 5;
 
 
+    public TextMeshPro healthText;
+
     private GunScript gun;
+    private Health health;
 
     void Start()
     {
         gun = hand.GetComponentInChildren<GunScript>();
+        health = GetComponent<Health>();
+    }
+
+    public void Damage(int amount)
+    {
+        health.health -= amount;
     }
 
     void Update()
     {
-        
         if (Input.GetMouseButton(0)) // Shoot
         {
             gun.Shoot();
@@ -70,4 +79,6 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+   
 }

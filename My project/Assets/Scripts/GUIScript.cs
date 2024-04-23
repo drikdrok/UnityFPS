@@ -7,6 +7,7 @@ public class GUIScript : MonoBehaviour
 {
 
     public TextMeshProUGUI ammoText;
+    public TextMeshProUGUI healthText;
     public TextMeshProUGUI pickupText;
 
     public GameObject playerHand;
@@ -21,5 +22,7 @@ public class GUIScript : MonoBehaviour
     {
         ammoText.text = "Ammo: " + playerHand.GetComponentInChildren<GunScript>().ammo;
         pickupText.enabled = playerController.canPickup;
+
+        healthText.text = "Health: " + playerController.GetComponent<Health>().health;
     }
 }
