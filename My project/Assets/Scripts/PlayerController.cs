@@ -11,6 +11,12 @@ public class PlayerController : MonoBehaviour
     public bool canPickup = false;
     public LayerMask gunLayerMask;
 
+    public GameObject WinScreen;
+    public GameObject DeathScreen;
+    public GameObject HUD;
+
+    public int score = 0;
+
     public int pickupDistance = 5;
 
 
@@ -28,11 +34,19 @@ public class PlayerController : MonoBehaviour
     public void Damage(int amount)
     {
         health.health -= amount;
+        if (health.health <= 0)
+        {
+            DeathScreen.SetActive(true);
+            HUD.SetActive(false);
+            GetComponent<FirstPersonController>().enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
     void Update()
     {
-        if (Input.GetMouseButton(0)) // Shoot
+        if (Input.GetMouseButton(0) && Cursor.lockState == CursorLockMode.Locked) // Shoot
         {
             gun.Shoot();
         }
@@ -77,6 +91,29 @@ public class PlayerController : MonoBehaviour
         {
             gun.ammo += other.GetComponent<AmmoPickup>().value;
             Destroy(other.gameObject);
+        }
+        else if (other.gameObject.CompareTag("Health"))
+        {
+            health.health += other.GetComponent<HealthPickup>().value;
+            if (health.health > 100)
+            {
+                health.health = 100;
+            }
+            Destroy(other.gameObject);
+        }
+    }
+
+    public void AddScore(int amount)
+    {
+        score += amount;
+
+        if (score >= 1000)
+        {
+            WinScreen.SetActive(true);
+            HUD.SetActive(false);
+            GetComponent<FirstPersonController>().enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 

@@ -9,6 +9,7 @@ TagManager:
   - Ammo
   - Gun
   - Ground
+  - Health
   layers:
   - Default
   - TransparentFX

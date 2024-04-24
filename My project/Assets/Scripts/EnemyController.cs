@@ -78,6 +78,7 @@ public class EnemyController : MonoBehaviour
     public void Die()
     {
         health.Kill();
+        FindAnyObjectByType<PlayerController>().AddScore(100);
         Destroy(gameObject);
     }
 

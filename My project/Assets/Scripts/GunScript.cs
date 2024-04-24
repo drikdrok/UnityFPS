@@ -11,6 +11,8 @@ public class GunScript : MonoBehaviour
 
     public float cooldownTime = 0.2f;
     public int ammo = 100;
+    public int minDamage = 30;
+    public int maxDamage = 30;
 
     private Transform cam;
     private bool canShoot = true;
@@ -38,7 +40,9 @@ public class GunScript : MonoBehaviour
     {
         if (canShoot && ammo > 0)
         {
-            Instantiate(bulletPrefab, spawnPoint.position, cam.rotation);
+            BulletScript bullet = Instantiate(bulletPrefab, spawnPoint.position, cam.rotation).GetComponent<BulletScript>();
+            bullet.minDmg = minDamage;
+            bullet.maxDmg = maxDamage;
             ammo--;
             StartCoroutine(Cooldown());
         }

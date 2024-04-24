@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Assets/Polygonal Aliens Pack/Scenes/Main Image Scene.unity
+    guid: 6b405482569da2f48b953bf5a91842a4
   m_configObjects: {}

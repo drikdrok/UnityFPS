@@ -138,6 +138,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 7696764647803508868}
   cooldownTime: 0.2
   ammo: 10
+  minDamage: 50
+  maxDamage: 70
 --- !u!65 &9117821440147323869
 BoxCollider:
   m_ObjectHideFlags: 0

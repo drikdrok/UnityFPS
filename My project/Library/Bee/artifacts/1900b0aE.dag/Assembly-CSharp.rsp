@@ -360,6 +360,8 @@
 "Assets/Scripts/GUIScript.cs"
 "Assets/Scripts/GunScript.cs"
 "Assets/Scripts/Health.cs"
+"Assets/Scripts/HealthPickup.cs"
+"Assets/Scripts/Menus.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:9.0
 
